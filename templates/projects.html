@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="page-title">Мои проекты</h1>
+
+<div class="row g-4">
+    <div class="col-12">
+        <div class="card shadow-sm project-card">
+            <div class="row g-0 align-items-center">
+                <div class="col-md-5">
+                    <img
+                        src="{{ url_for('static', filename='img/project-2048.png') }}"
+                        alt="Скриншот проекта 2048"
+                        class="img-fluid project-image"
+                    >
+                </div>
+                <div class="col-md-7">
+                    <div class="card-body">
+                        <h2 class="card-title">2048 с таблицей лидеров</h2>
+                        <p class="project-meta">
+                            Учебный / pet-проект
+                        </p>
+                        <p class="card-text">
+                            Браузерная версия игры 2048 с возможностью сохранять результаты
+                            и отображать таблицу лидеров. Backend проекта был реализован
+                            на Java Spring Boot, frontend — на JavaScript.
+                        </p>
+                        <p class="card-text">
+                            Этот проект помог мне получить практический опыт в разработке
+                            клиент-серверного веб-приложения и взаимодействии frontend- и backend-части.
+                        </p>
+                        <a href="https://github.com/KromSanya/2048Game" 
+                        class="btn btn-outline-dark mt-3"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                            GitHub проекта
+                        </a>
+
+                        <div class="tech-badges mt-3">
+                            <span class="tech-badge tech-java">Java</span>
+                            <span class="tech-badge tech-spring">Spring Boot</span>
+                            <span class="tech-badge tech-js">JavaScript</span>
+                            <span class="tech-badge tech-html">HTML</span>
+                            <span class="tech-badge tech-css">CSS</span>
+                            <span class="tech-badge tech-git">Git</span>
+                            <span class="tech-badge tech-db">PostgreSQL</span>
+                            <span class="tech-badge tech-auth">OAuth2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12">
+        <div class="card shadow-sm project-card">
+            <div class="row g-0 align-items-center">
+                <div class="col-md-5">
+                    <img
+                        src="{{ url_for('static', filename='img/project-tbank.png') }}"
+                        alt="Скриншот MVP сайта, разработанного во время практики в Т-Банке"
+                        class="img-fluid project-image"
+                    >
+                </div>
+                <div class="col-md-7">
+                    <div class="card-body">
+                        <h2 class="card-title">MVP сайта во время практики в Т-Банке</h2>
+                        <p class="project-meta">
+                            Практика в Т-Банке
+                        </p>
+                        <p class="card-text">
+                            Во время практики от университета в Т-Банке я работал в роли Java-разработчика
+                            и занимался backend-разработкой MVP сайта для поиска авторских экскурсий
+                            от локальных гидов.
+                        </p>
+                        <p class="card-text">
+                            Я реализовал backend проекта целиком: разрабатывал серверную логику,
+                            систему авторизации на OAuth2 и логику рекомендаций для подбора
+                            более релевантных экскурсий пользователям.
+                        </p>
+                        <p class="card-text">
+                            Помимо этого, я проектировал архитектуру системы на уровне первых трёх
+                            уровней модели C4, разрабатывал базу данных, и использовал Flyway для миграций.
+                        </p>
+                        <p class="card-text mb-0">
+                            В проекте применялись Java, Spring Boot, PostgreSQL и pgVector,
+                            что дало мне практический опыт полного цикла backend-разработки:
+                            от проектирования архитектуры и БД до реализации рекомендательной системы.
+                        </p>
+                        <a href="https://github.com/KromSanya/excopen" 
+                        class="btn btn-outline-dark mt-3"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                            GitHub проекта
+                        </a>
+
+                        <div class="tech-badges mt-3">
+                            <span class="tech-badge tech-java">Java</span>
+                            <span class="tech-badge tech-spring">Spring Boot</span>
+                            <span class="tech-badge tech-git">Git</span>
+                            <span class="tech-badge tech-db">PostgreSQL</span>
+                            <span class="tech-badge tech-vector">pgVector</span>
+                            <span class="tech-badge tech-auth">OAuth2</span>
+                            <span class="tech-badge tech-team">Teamwork</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h2 class="card-title">Другие учебные проекты</h2>
+                <p class="card-text mb-0">
+                    Помимо этих работ, я выполнял лабораторные и небольшие проекты
+                    на Java, C++, Kotlin и Python, связанные с алгоритмами,
+                    разработкой приложений и веб-технологиями.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

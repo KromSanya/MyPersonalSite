@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero-section">
+    <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+            <div class="hero-content">
+                <p class="hero-label">Персональная страница</p>
+                <h1 class="hero-title">
+                    Александр — начинающий Java-разработчик
+                </h1>
+                <p class="hero-description">
+                    Студент первого курса магистратуры ОмГУ по направлению
+                    «Прикладная математика и информатика».
+                    Интересуюсь backend-разработкой, веб-приложениями
+                    и созданием полноценных MVP-проектов.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="/about" class="hero-btn">Обо мне</a>
+                    <a href="/projects" class="hero-btn">Проекты</a>
+                    <a href="/contacts" class="hero-btn">Контакты</a>
+                </div>
+
+                <div class="tech-badges mt-4">
+                    <span class="tech-badge tech-java">Java</span>
+                    <span class="tech-badge tech-spring">Spring Boot</span>
+                    <span class="tech-badge tech-db">PostgreSQL</span>
+                    <span class="tech-badge tech-auth">OAuth2</span>
+                    <span class="tech-badge tech-git">Git</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-5">
+            <div class="hero-side-card">
+                <h2 class="hero-side-title">Кратко</h2>
+                <ul class="hero-points">
+                    <li>1 курс магистратуры ОмГУ</li>
+                    <li>Практика в Т-Банке как Java-разработчик</li>
+                    <li>Pet-проект: 2048 с таблицей лидеров</li>
+                    <li>Интерес к backend и веб-разработке</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="home-section mt-5">
+    <div class="section-header">
+        <h2 class="section-main-title">Ключевые направления</h2>
+        <p class="section-main-text">
+            Основные области, в которых я развиваюсь и набираюсь практического опыта.
+        </p>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card feature-card h-100 shadow-sm">
+                <div class="card-body">
+                    <h3 class="card-title">Java backend</h3>
+                    <p class="card-text">
+                        Изучаю серверную разработку на Java, работаю со Spring Boot
+                        и постепенно углубляюсь в проектирование backend-логики.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card feature-card h-100 shadow-sm">
+                <div class="card-body">
+                    <h3 class="card-title">Веб-приложения</h3>
+                    <p class="card-text">
+                        Работаю с frontend- и backend-частью приложений,
+                        используя HTML, CSS, JavaScript, Flask и шаблоны Jinja2.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card feature-card h-100 shadow-sm">
+                <div class="card-body">
+                    <h3 class="card-title">Базы данных</h3>
+                    <p class="card-text">
+                        Использую PostgreSQL и MySQL в учебных и проектных задачах,
+                        а также знаком с применением pgVector для рекомендаций.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="home-section mt-5">
+    <div class="section-header">
+        <h2 class="section-main-title">Выбранные проекты</h2>
+        <p class="section-main-text">
+            Несколько проектов, которые лучше всего показывают мой текущий опыт.
+        </p>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="card project-preview-card h-100 shadow-sm">
+                <div class="card-body">
+                    <h3 class="card-title">2048 с таблицей лидеров</h3>
+                    <p class="card-text">
+                        Браузерный проект с backend на Spring Boot и frontend на JavaScript.
+                    </p>
+                    <a href="/projects" class="btn btn-outline-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card project-preview-card h-100 shadow-sm">
+                <div class="card-body">
+                    <h3 class="card-title">MVP сайта в Т-Банке</h3>
+                    <p class="card-text">
+                        Практика в роли Java-разработчика с участием в создании MVP
+                        и векторной системы рекомендаций.
+                    </p>
+                    <a href="/projects" class="btn btn-outline-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
