@@ -15,8 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ".card, .hero-box, .not-found-box, .hero-section, .hero-side-card"
     );
 
-    animatedBlocks.forEach((block, index) => {
+    animatedBlocks.forEach((block) => {
         block.classList.add("fade-in");
-        block.style.animationDelay = `${index * 0.12}s`;
     });
 });

@@ -178,6 +178,18 @@ footer {
     font-weight: 600;
     letter-spacing: 0.2px;
     border: 1px solid transparent;
+    transition:
+        transform 0.18s ease,
+        box-shadow 0.18s ease,
+        filter 0.18s ease,
+        border-color 0.18s ease;
+    cursor: default;
+}
+
+.tech-badge:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+    filter: saturate(1.08);
 }
 
 /* Tech colors */
@@ -466,3 +478,4 @@ footer {
         width: 100%;
     }
 }
+

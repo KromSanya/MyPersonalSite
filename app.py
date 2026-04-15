@@ -16,17 +16,19 @@ csp = {
     ],
     "style-src": [
         "'self'",
-        "'unsafe-inline'",
         "https://cdn.jsdelivr.net",
     ],
     "img-src": [
         "'self'",
-        "data:",
     ],
     "font-src": [
         "'self'",
         "https://cdn.jsdelivr.net",
     ],
+    "object-src": "'none'",
+    "base-uri": "'self'",
+    "frame-ancestors": "'none'",
+    "form-action": "'self'",
 }
 
 is_production = os.getenv("FLASK_ENV") == "production"
