@@ -6,7 +6,6 @@ import os
 load_dotenv()
 
 app = Flask(__name__)
-
 app.config["SECRET_KEY"] = os.getenv("SECRET_KEY", "dev-secret-key-change-this")
 
 csp = {
@@ -30,12 +29,15 @@ csp = {
     ],
 }
 
+is_production = os.getenv("FLASK_ENV") == "production"
+
 Talisman(
     app,
-    force_https=False,
-    strict_transport_security=False,
+    force_https=is_production,
+    strict_transport_security=is_production,
+    strict_transport_security_preload=is_production,
+    strict_transport_security_max_age=31536000 if is_production else 0,
     content_security_policy=csp,
-    content_security_policy_nonce_in=None,
     frame_options="DENY",
     referrer_policy="strict-origin-when-cross-origin",
 )
